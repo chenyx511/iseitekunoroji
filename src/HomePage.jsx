@@ -69,6 +69,17 @@ function HomePage({ lang, content }) {
 
   return (
     <div className="site">
+      <div className="tech-bg" aria-hidden="true">
+        <span className="orb orb-a" />
+        <span className="orb orb-b" />
+        <span className="scanline" />
+        <div className="grid-overlay" />
+        <div className="particles">
+          {Array.from({ length: 24 }).map((_, index) => (
+            <span key={index} className="particle" />
+          ))}
+        </div>
+      </div>
       <SeoMeta
         title={texts.seo.title}
         description={texts.seo.description}
@@ -103,6 +114,11 @@ function HomePage({ lang, content }) {
           <p className="kicker">{texts.hero.kicker}</p>
           <h1>{texts.hero.title}</h1>
           <p className="hero-text">{texts.hero.description}</p>
+          <div className="hero-chips">
+            <span>AI Ready</span>
+            <span>Cloud Native</span>
+            <span>Secure Delivery</span>
+          </div>
           <div className="hero-actions">
             <a href="#contact" className="btn primary">
               {texts.hero.primaryButton}
@@ -119,6 +135,28 @@ function HomePage({ lang, content }) {
               <li key={item}>{item}</li>
             ))}
           </ul>
+          <div className="hero-radar" aria-hidden="true">
+            <span className="ring ring-a" />
+            <span className="ring ring-b" />
+            <span className="ring ring-c" />
+            <span className="cross cross-x" />
+            <span className="cross cross-y" />
+            <span className="dot" />
+          </div>
+          <div className="hero-metrics">
+            <div>
+              <strong>99.95%</strong>
+              <span>Uptime</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Support</span>
+            </div>
+            <div>
+              <strong>3x</strong>
+              <span>Delivery Speed</span>
+            </div>
+          </div>
         </div>
       </section>
 
