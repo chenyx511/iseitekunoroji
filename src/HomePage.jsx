@@ -68,7 +68,7 @@ function HomePage({ lang, content }) {
   }
 
   return (
-    <div className="site">
+    <div className="site cyber-site">
       <div className="tech-bg" aria-hidden="true">
         <span className="orb orb-a" />
         <span className="orb orb-b" />
@@ -110,10 +110,19 @@ function HomePage({ lang, content }) {
       </header>
 
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-content cyber-panel">
           <p className="kicker">{texts.hero.kicker}</p>
-          <h1>{texts.hero.title}</h1>
+          <h1 className="neon-title" data-text={texts.hero.title}>
+            {texts.hero.title}
+          </h1>
           <p className="hero-text">{texts.hero.description}</p>
+          <div className="signal-bars" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
           <div className="hero-chips">
             <span>AI Ready</span>
             <span>Cloud Native</span>
@@ -128,7 +137,7 @@ function HomePage({ lang, content }) {
             </a>
           </div>
         </div>
-        <div className="hero-panel">
+        <div className="hero-panel cyber-panel">
           <p>{texts.hero.industriesTitle}</p>
           <ul>
             {texts.hero.industries.map((item) => (
@@ -160,14 +169,14 @@ function HomePage({ lang, content }) {
         </div>
       </section>
 
-      <section id="services" className="section">
+      <section id="services" className="section cyber-section">
         <div className="section-head">
           <h2>{texts.servicesSection.title}</h2>
           <p>{texts.servicesSection.description}</p>
         </div>
         <div className="grid services">
           {texts.servicesSection.items.map((item) => (
-            <article className="card" key={item.title}>
+            <article className="card cyber-card" key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <div className="tags">
@@ -180,14 +189,14 @@ function HomePage({ lang, content }) {
         </div>
       </section>
 
-      <section id="cases" className="section">
+      <section id="cases" className="section cyber-section">
         <div className="section-head">
           <h2>{texts.casesSection.title}</h2>
           <p>{texts.casesSection.description}</p>
         </div>
         <div className="grid cases">
           {texts.casesSection.items.map((item) => (
-            <article className="case" key={item.slug}>
+            <article className="case cyber-card" key={item.slug}>
               {item.coverImage && <img className="case-cover" src={item.coverImage} alt={item.name} />}
               <h3>{item.name}</h3>
               <p>{item.value}</p>
@@ -199,7 +208,7 @@ function HomePage({ lang, content }) {
         </div>
       </section>
 
-      <section id="about" className="section about">
+      <section id="about" className="section about cyber-section">
         <div>
           <h2>{texts.aboutSection.title}</h2>
           <p>{texts.aboutSection.description}</p>
@@ -213,7 +222,7 @@ function HomePage({ lang, content }) {
         </div>
       </section>
 
-      <section id="contact" className="section contact">
+      <section id="contact" className="section contact cyber-section">
         <div className="section-head">
           <h2>{texts.contactSection.title}</h2>
           <p>{texts.contactSection.description}</p>
