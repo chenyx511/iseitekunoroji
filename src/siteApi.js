@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE || ''
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://iseitekunoroji-production.up.railway.app'
 
 async function request(path, options = {}) {
   const token = localStorage.getItem('adminToken')
