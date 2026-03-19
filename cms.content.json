@@ -1,0 +1,326 @@
+{
+  "ja": {
+    "siteName": "偉盛テクノロジー",
+    "seo": {
+      "title": "偉盛テクノロジー - 企業向けデジタルソリューション",
+      "description": "ECサイト構築、業務システム開発、オフィスシステム、企業Web制作をワンストップで提供します。",
+      "ogImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+    },
+    "common": {
+      "viewDetail": "詳細を見る",
+      "submitting": "送信中...",
+      "captchaPlaceholder": "認証コードを入力",
+      "backHome": "トップへ戻る",
+      "caseNotFound": "事例が見つかりません。"
+    },
+    "nav": {
+      "services": "サービス",
+      "cases": "導入事例",
+      "about": "会社紹介",
+      "contact": "お問い合わせ"
+    },
+    "hero": {
+      "kicker": "TECH + BUSINESS",
+      "title": "企業成長を支える統合デジタル開発",
+      "description": "EC、ソフトウェア、オフィスシステム、企業サイトの開発を通じて、業務効率化と売上拡大を実現します。",
+      "primaryButton": "無料相談",
+      "secondaryButton": "サービスを見る",
+      "industriesTitle": "対応業界",
+      "industries": ["小売・EC", "製造・サプライチェーン", "教育", "公共サービス"]
+    },
+    "servicesSection": {
+      "title": "主要サービス",
+      "description": "課題整理から設計・開発・運用まで一気通貫で対応",
+      "items": [
+        {
+          "title": "ECプラットフォーム構築",
+          "description": "B2C/B2B 向けに決済・会員・受注管理を統合したECシステムを構築します。",
+          "tags": ["EC構築", "決済連携", "販促施策"]
+        },
+        {
+          "title": "カスタムソフト開発",
+          "description": "業務フローに合わせたシステムを要件定義から保守まで提供します。",
+          "tags": ["要件定義", "設計", "継続改善"]
+        },
+        {
+          "title": "オフィスシステム開発",
+          "description": "承認・申請・レポート機能を備えたOAシステムを構築します。",
+          "tags": ["ワークフロー", "権限管理", "可視化"]
+        },
+        {
+          "title": "企業サイト制作",
+          "description": "ブランド訴求と問い合わせ獲得を両立するコーポレートサイトを制作します。",
+          "tags": ["ブランドサイト", "SEO", "CV改善"]
+        }
+      ]
+    },
+    "casesSection": {
+      "title": "導入事例",
+      "description": "成果に直結する実装と運用支援",
+      "items": [
+        {
+          "slug": "smart-commerce-upgrade",
+          "name": "スマートEC再構築",
+          "value": "3か月で多端末再構築、CV率 37% 向上",
+          "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "スマートEC再構築",
+          "detailSummary": "小売企業向けにEC基盤を全面刷新したプロジェクトです。",
+          "detailBody": "決済連携、会員機能、マーケティング機能を統合し、注文導線を最適化。管理画面の分析機能により、運用チームの意思決定速度も向上しました。"
+        },
+        {
+          "slug": "oa-process-rebuild",
+          "name": "製造業OAプロセス改善",
+          "value": "承認時間を3日から4時間へ短縮",
+          "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "製造業OAプロセス改善",
+          "detailSummary": "部門横断の承認フローを統合し、運用負荷を大幅に削減。",
+          "detailBody": "モバイル承認、通知自動化、権限管理を導入し、申請処理の可視化と統制を実現。現場・管理部門双方の業務スピードが向上しました。"
+        },
+        {
+          "slug": "global-brand-sites",
+          "name": "グローバルブランドサイト群",
+          "value": "日中英の多言語サイトを統合管理",
+          "coverImage": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "グローバルブランドサイト群",
+          "detailSummary": "多拠点運用向けにサイトテンプレートを標準化。",
+          "detailBody": "多言語コンテンツ管理、SEO運用、ブランドガイドラインを統合し、マーケティングチームの更新効率を高めました。"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "偉盛テクノロジーが選ばれる理由",
+      "description": "ビジネス理解と技術実装を両立し、安定運用まで責任を持って伴走します。",
+      "timeline": ["課題ヒアリング", "要件定義・設計", "アジャイル開発", "運用改善"]
+    },
+    "contactSection": {
+      "title": "お問い合わせ",
+      "description": "要件をご入力ください。24時間以内にご連絡いたします。",
+      "fields": {
+        "company": "会社名",
+        "contact": "担当者名",
+        "phone": "電話番号",
+        "message": "ご要件をご記入ください"
+      },
+      "submit": "送信する",
+      "success": "送信が完了しました。担当よりご連絡します。",
+      "failed": "送信に失敗しました。しばらくしてから再度お試しください。"
+    },
+    "footer": "企業向けデジタルソリューション"
+  },
+  "zh": {
+    "siteName": "伟盛科技",
+    "seo": {
+      "title": "伟盛科技 - 企业数字化解决方案",
+      "description": "伟盛科技专注电商平台、软件开发、办公系统开发与企业网站建设，提供从咨询到交付的一体化技术服务。",
+      "ogImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+    },
+    "common": {
+      "viewDetail": "查看详情",
+      "submitting": "提交中...",
+      "captchaPlaceholder": "请输入验证码答案",
+      "backHome": "返回首页",
+      "caseNotFound": "案例不存在。"
+    },
+    "nav": {
+      "services": "业务领域",
+      "cases": "项目案例",
+      "about": "关于我们",
+      "contact": "联系我们"
+    },
+    "hero": {
+      "kicker": "TECH + BUSINESS",
+      "title": "为企业提供一体化数字化解决方案",
+      "description": "我们专注电商平台、软件开发、办公系统开发和网站开发，帮助企业从业务梳理到系统落地，快速完成数字化升级。",
+      "primaryButton": "获取方案",
+      "secondaryButton": "查看业务",
+      "industriesTitle": "已服务行业",
+      "industries": ["零售与电商", "制造与供应链", "教育与培训", "政企服务"]
+    },
+    "servicesSection": {
+      "title": "核心业务",
+      "description": "围绕业务增长与效率提升，提供端到端技术服务",
+      "items": [
+        {
+          "title": "电商平台建设",
+          "description": "支持 B2C/B2B 多端商城，集成支付、订单、会员与营销系统，帮助企业快速上线交易闭环。",
+          "tags": ["商城系统", "支付接入", "活动运营"]
+        },
+        {
+          "title": "软件定制开发",
+          "description": "围绕业务流程打造专属系统，覆盖需求分析、产品设计、开发交付与长期运维。",
+          "tags": ["需求咨询", "系统设计", "持续迭代"]
+        },
+        {
+          "title": "办公系统开发",
+          "description": "搭建 OA/审批/协同办公系统，实现流程自动化、权限管控与数据可视化报表。",
+          "tags": ["流程引擎", "权限体系", "数据报表"]
+        },
+        {
+          "title": "企业网站开发",
+          "description": "提供品牌官网、营销站、门户站一体化建设方案，兼顾形象展示与线索转化。",
+          "tags": ["品牌官网", "SEO 基础", "询盘转化"]
+        }
+      ]
+    },
+    "casesSection": {
+      "title": "项目案例",
+      "description": "以交付结果为导向，保障项目价值持续释放",
+      "items": [
+        {
+          "slug": "smart-commerce-upgrade",
+          "name": "智选商城升级项目",
+          "value": "3 个月完成多端重构，订单转化提升 37%",
+          "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "智选商城升级项目",
+          "detailSummary": "面向零售企业的电商平台升级，覆盖用户端、运营端与供应链协同。",
+          "detailBody": "项目采用前后端分离架构，接入支付网关、营销中心和会员体系。我们重构了核心交易链路，提升页面性能和下单成功率，并提供运营分析仪表盘支持精细化运营。"
+        },
+        {
+          "slug": "oa-process-rebuild",
+          "name": "制造业 OA 流程改造",
+          "value": "审批时长从 3 天缩短至 4 小时",
+          "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "制造业 OA 流程改造",
+          "detailSummary": "针对跨部门审批效率低的问题，构建统一流程引擎与权限模型。",
+          "detailBody": "项目覆盖请购、报销、合同审批与用章流程。通过移动端审批、自动提醒和流程追踪机制，显著提升业务执行效率，减少沟通成本与流程遗漏。"
+        },
+        {
+          "slug": "global-brand-sites",
+          "name": "跨境品牌官网集群",
+          "value": "支持中英双语与多站点统一管理",
+          "coverImage": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "跨境品牌官网集群",
+          "detailSummary": "构建多语言品牌网站体系，统一内容管理与发布流程。",
+          "detailBody": "我们搭建了多站点模板体系、可视化内容管理和 SEO 基础能力，支持市场团队快速更新内容，同时保证品牌视觉与技术规范的一致性。"
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "为什么选择伟盛科技",
+      "description": "我们坚持“懂业务的技术团队”理念，从咨询、设计、开发到上线运维全流程负责，保障交付质量与系统稳定性。",
+      "timeline": ["需求调研与业务诊断", "方案设计与原型评审", "敏捷开发与阶段验收", "上线运维与持续优化"]
+    },
+    "contactSection": {
+      "title": "联系我们",
+      "description": "填写需求，我们将在 24 小时内与您联系",
+      "fields": {
+        "company": "企业名称",
+        "contact": "联系人",
+        "phone": "联系电话",
+        "message": "请简要描述您的项目需求"
+      },
+      "submit": "提交需求",
+      "success": "提交成功，我们会尽快联系您。",
+      "failed": "提交失败，请稍后重试。"
+    },
+    "footer": "数字化解决方案服务商"
+  },
+  "en": {
+    "siteName": "Weisheng Tech",
+    "seo": {
+      "title": "Weisheng Tech - Digital Solutions for Enterprises",
+      "description": "Weisheng Tech delivers e-commerce, software development, office systems, and website solutions from consulting to deployment.",
+      "ogImage": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+    },
+    "common": {
+      "viewDetail": "View Details",
+      "submitting": "Submitting...",
+      "captchaPlaceholder": "Enter captcha answer",
+      "backHome": "Back to home",
+      "caseNotFound": "Case not found."
+    },
+    "nav": {
+      "services": "Services",
+      "cases": "Cases",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "hero": {
+      "kicker": "TECH + BUSINESS",
+      "title": "End-to-End Digital Solutions for Enterprises",
+      "description": "We specialize in e-commerce platforms, custom software, office systems, and enterprise websites to accelerate digital transformation.",
+      "primaryButton": "Get Proposal",
+      "secondaryButton": "View Services",
+      "industriesTitle": "Industries We Serve",
+      "industries": ["Retail & E-commerce", "Manufacturing & Supply Chain", "Education & Training", "Public Services"]
+    },
+    "servicesSection": {
+      "title": "Core Services",
+      "description": "Technology services focused on growth and operational efficiency",
+      "items": [
+        {
+          "title": "E-commerce Platform",
+          "description": "Build B2C/B2B commerce systems with payments, orders, memberships, and marketing modules.",
+          "tags": ["Commerce", "Payment", "Campaigns"]
+        },
+        {
+          "title": "Custom Software Development",
+          "description": "Deliver custom systems aligned to your business workflows from discovery to long-term maintenance.",
+          "tags": ["Discovery", "Architecture", "Iteration"]
+        },
+        {
+          "title": "Office System Development",
+          "description": "Develop OA and workflow platforms with automation, role-based access control, and dashboards.",
+          "tags": ["Workflow", "Permissions", "Reporting"]
+        },
+        {
+          "title": "Corporate Website Development",
+          "description": "Create brand sites, marketing websites, and portals with conversion-focused structure.",
+          "tags": ["Brand Site", "SEO Basics", "Lead Capture"]
+        }
+      ]
+    },
+    "casesSection": {
+      "title": "Case Studies",
+      "description": "Outcome-driven delivery with measurable business value",
+      "items": [
+        {
+          "slug": "smart-commerce-upgrade",
+          "name": "Smart Commerce Upgrade",
+          "value": "Multi-platform rebuild in 3 months, conversion up by 37%",
+          "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "Smart Commerce Upgrade",
+          "detailSummary": "A full e-commerce modernization project for a retail enterprise.",
+          "detailBody": "We rebuilt critical transaction paths with a decoupled architecture, integrated payment gateways and CRM modules, and launched an analytics dashboard for operations teams."
+        },
+        {
+          "slug": "oa-process-rebuild",
+          "name": "Manufacturing OA Revamp",
+          "value": "Approval cycle reduced from 3 days to 4 hours",
+          "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "Manufacturing OA Revamp",
+          "detailSummary": "A workflow transformation for multi-department approvals.",
+          "detailBody": "The solution included mobile approvals, automated reminders, role-based process controls, and visibility tools that improved execution and compliance."
+        },
+        {
+          "slug": "global-brand-sites",
+          "name": "Global Brand Site Cluster",
+          "value": "Unified management for bilingual multi-site operations",
+          "coverImage": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80",
+          "detailTitle": "Global Brand Site Cluster",
+          "detailSummary": "A multilingual website system with centralized content operations.",
+          "detailBody": "We delivered reusable templates, content governance, and SEO-ready infrastructure so global teams can update pages quickly with consistent branding."
+        }
+      ]
+    },
+    "aboutSection": {
+      "title": "Why Weisheng Tech",
+      "description": "We combine business understanding and engineering execution to deliver stable and scalable systems.",
+      "timeline": ["Business Discovery", "Solution & Prototyping", "Agile Delivery", "Launch & Optimization"]
+    },
+    "contactSection": {
+      "title": "Contact Us",
+      "description": "Submit your requirements and we will reach out within 24 hours.",
+      "fields": {
+        "company": "Company Name",
+        "contact": "Contact Person",
+        "phone": "Phone Number",
+        "message": "Briefly describe your project requirements"
+      },
+      "submit": "Submit Requirement",
+      "success": "Submitted successfully. We will contact you shortly.",
+      "failed": "Submission failed. Please try again later."
+    },
+    "footer": "Enterprise Digital Solutions Provider"
+  }
+}
