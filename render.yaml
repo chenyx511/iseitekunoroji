@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: iseitekunoroji-api
+    runtime: node
+    plan: free
+    rootDir: .
+    buildCommand: npm ci
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: API_PORT
+        value: 8787
+      - key: SITE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_USERS_JSON
+        sync: false
+      - key: SESSION_TTL_SEC
+        value: 28800
+      - key: CAPTCHA_TTL_MS
+        value: 300000
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 60000
+      - key: RATE_LIMIT_MAX
+        value: 5
+      - key: UPLOAD_MAX_BYTES
+        value: 2097152
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: 465
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: NOTIFY_EMAIL_FROM
+        sync: false
+      - key: NOTIFY_EMAIL_TO
+        sync: false
+      - key: WECOM_WEBHOOK_URL
+        sync: false
+      - key: FEISHU_WEBHOOK_URL
+        sync: false

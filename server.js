@@ -17,7 +17,7 @@ const INQUIRIES_FILE = path.join(__dirname, 'inquiries.json')
 const UPLOADS_DIR = path.join(__dirname, 'uploads')
 
 const app = express()
-const port = Number(process.env.API_PORT || 8787)
+const port = Number(process.env.PORT || process.env.API_PORT || 8787)
 const jwtSecret = process.env.JWT_SECRET || 'please-change-jwt-secret'
 const rateLimitWindowMs = Number(process.env.RATE_LIMIT_WINDOW_MS || 60_000)
 const rateLimitMax = Number(process.env.RATE_LIMIT_MAX || 5)
@@ -28,7 +28,28 @@ const adminUsers = JSON.parse(
     '[{"username":"admin","password":"admin123","role":"admin"},{"username":"editor","password":"editor123","role":"editor"}]',
 )
 
-app.use(cors())
+app.set('trust proxy', true)
+
+const corsOrigins = String(process.env.CORS_ORIGINS || '')
+  .split(',')
+  .map((item) => item.trim())
+  .filter(Boolean)
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!origin) {
+        callback(null, true)
+        return
+      }
+      if (corsOrigins.length === 0 || corsOrigins.includes(origin)) {
+        callback(null, true)
+        return
+      }
+      callback(new Error('Not allowed by CORS'))
+    },
+  }),
+)
 app.use(express.json({ limit: '1mb' }))
 app.use('/uploads', express.static(UPLOADS_DIR))
 

@@ -79,6 +79,7 @@ npm run dev
 - `JWT_SECRET`：JWT 密钥（务必改成强随机）
 - `ADMIN_USERS_JSON`：后台账号与角色
 - `SITE_URL`：用于 sitemap/robots 的正式域名
+- `CORS_ORIGINS`：允许访问 API 的前端域名（可逗号分隔）
 
 防刷与上传：
 
@@ -96,6 +97,36 @@ npm run dev
 
 - `VITE_SITE_URL`
 - `VITE_API_BASE`
+
+## 部署 API 到 Railway / Render
+
+仓库已包含两种平台配置：
+
+- Railway：`railway.json`
+- Render：`render.yaml`
+
+### Railway（推荐速度快）
+
+1. 进入 Railway，新建 `Project` -> `Deploy from GitHub repo`
+2. 选择 `chenyx511/iseitekunoroji`
+3. 在 Service Variables 填写后端变量（见上文“生产环境变量”）
+4. 部署完成后拿到 API 域名，例如：`https://xxxx.up.railway.app`
+5. 将前端 `VITE_API_BASE` 设为该域名并重新触发前端部署
+
+### Render（配置清晰）
+
+1. 进入 Render，`New` -> `Blueprint` -> 选择本仓库（自动读取 `render.yaml`）
+2. 按提示填写密钥变量（`sync: false` 的项）
+3. 部署后得到 API 地址，例如：`https://iseitekunoroji-api.onrender.com`
+4. 把前端 `VITE_API_BASE` 更新为该地址并重建前端
+
+### 联调检查
+
+部署完成后依次验证：
+
+- `GET <API_URL>/api/health` 返回 `{ "ok": true }`
+- 前端页面提交需求可成功返回
+- 后台登录、内容保存、媒体上传可用
 
 ## 权限模型
 
