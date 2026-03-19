@@ -59,8 +59,12 @@ jobs:
         run: cp dist/index.html dist/404.html
 
       - name: Optional CNAME
-        if: ${{ secrets.CUSTOM_DOMAIN != '' }}
-        run: echo "${{ secrets.CUSTOM_DOMAIN }}" > dist/CNAME
+        env:
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
+        run: |
+          if [ -n "$CUSTOM_DOMAIN" ]; then
+            echo "$CUSTOM_DOMAIN" > dist/CNAME
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
