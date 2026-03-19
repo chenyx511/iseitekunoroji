@@ -86,7 +86,7 @@ function HomePage({ lang, content }) {
 
         <div className="hero-overlay">
           <div className="hero-copy">
-            <p className="kicker">{texts.hero.kicker}</p>
+            <p className="hero-company-name">{texts.siteName}</p>
             <h1 className="hero-main-title">{texts.hero.title}</h1>
             <p className="hero-text">{texts.hero.description}</p>
             <div className="hero-actions">
