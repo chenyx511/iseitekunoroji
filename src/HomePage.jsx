@@ -41,6 +41,11 @@ function HomePage({ lang, content }) {
     return <div className="empty-state">Loading...</div>
   }
 
+  const heroImage =
+    texts.hero?.coverImage ||
+    texts.casesSection?.items?.[0]?.coverImage ||
+    'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80'
+
   async function refreshCaptcha() {
     const next = await fetchCaptcha()
     setCaptcha(next)
@@ -69,17 +74,6 @@ function HomePage({ lang, content }) {
 
   return (
     <div className="site cyber-site">
-      <div className="tech-bg" aria-hidden="true">
-        <span className="orb orb-a" />
-        <span className="orb orb-b" />
-        <span className="scanline" />
-        <div className="grid-overlay" />
-        <div className="particles">
-          {Array.from({ length: 24 }).map((_, index) => (
-            <span key={index} className="particle" />
-          ))}
-        </div>
-      </div>
       <SeoMeta
         title={texts.seo.title}
         description={texts.seo.description}
@@ -87,85 +81,68 @@ function HomePage({ lang, content }) {
         image={texts.seo.ogImage}
       />
 
-      <header className="topbar">
-        <div className="brand">
-          <span className="brand-dot" />
-          {texts.siteName}
-        </div>
-        <nav className="nav">
-          <a href="#services">{texts.nav.services}</a>
-          <a href="#cases">{texts.nav.cases}</a>
-          <a href="#about">{texts.nav.about}</a>
-          <a href="#contact">{texts.nav.contact}</a>
-          <Link to="/" className="lang-switch">
-            JP
-          </Link>
-          <Link to="/zh" className="lang-switch">
-            中文
-          </Link>
-          <Link to="/en" className="lang-switch">
-            EN
-          </Link>
-        </nav>
-      </header>
+      <section className="hero-banner" style={{ '--hero-image': `url(${heroImage})` }}>
+        <span className="light-sweep" aria-hidden="true" />
 
-      <section className="hero">
-        <div className="hero-content cyber-panel">
-          <p className="kicker">{texts.hero.kicker}</p>
-          <h1 className="neon-title" data-text={texts.hero.title}>
-            {texts.hero.title}
-          </h1>
-          <p className="hero-text">{texts.hero.description}</p>
-          <div className="signal-bars" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
+        <div className="hero-overlay">
+          <div className="hero-copy">
+            <p className="kicker">{texts.hero.kicker}</p>
+            <h1 className="hero-main-title">{texts.hero.title}</h1>
+            <p className="hero-text">{texts.hero.description}</p>
+            <div className="hero-actions">
+              <a href="#contact" className="btn primary">
+                {texts.hero.primaryButton}
+              </a>
+              <a href="#services" className="btn ghost">
+                {texts.hero.secondaryButton}
+              </a>
+            </div>
           </div>
-          <div className="hero-chips">
-            <span>AI Ready</span>
-            <span>Cloud Native</span>
-            <span>Secure Delivery</span>
-          </div>
-          <div className="hero-actions">
-            <a href="#contact" className="btn primary">
-              {texts.hero.primaryButton}
-            </a>
-            <a href="#services" className="btn ghost">
-              {texts.hero.secondaryButton}
-            </a>
+
+          <div className="hero-side-panel">
+            <p>{texts.hero.industriesTitle}</p>
+            <ul>
+              {texts.hero.industries.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <div className="hero-metrics">
+              <div>
+                <strong>99.95%</strong>
+                <span>Uptime</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+              <div>
+                <strong>3x</strong>
+                <span>Delivery Speed</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="hero-panel cyber-panel">
-          <p>{texts.hero.industriesTitle}</p>
-          <ul>
-            {texts.hero.industries.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <div className="hero-radar" aria-hidden="true">
-            <span className="ring ring-a" />
-            <span className="ring ring-b" />
-            <span className="ring ring-c" />
-            <span className="cross cross-x" />
-            <span className="cross cross-y" />
-            <span className="dot" />
+
+        <div className="hero-bottom-nav">
+          <div className="brand">
+            <span className="brand-dot" />
+            {texts.siteName}
           </div>
-          <div className="hero-metrics">
-            <div>
-              <strong>99.95%</strong>
-              <span>Uptime</span>
-            </div>
-            <div>
-              <strong>24/7</strong>
-              <span>Support</span>
-            </div>
-            <div>
-              <strong>3x</strong>
-              <span>Delivery Speed</span>
-            </div>
-          </div>
+          <nav className="nav classic-nav">
+            <a href="#services">{texts.nav.services}</a>
+            <a href="#cases">{texts.nav.cases}</a>
+            <a href="#about">{texts.nav.about}</a>
+            <a href="#contact">{texts.nav.contact}</a>
+            <Link to="/" className="lang-switch">
+              JP
+            </Link>
+            <Link to="/zh" className="lang-switch">
+              中文
+            </Link>
+            <Link to="/en" className="lang-switch">
+              EN
+            </Link>
+          </nav>
         </div>
       </section>
 
