@@ -78,8 +78,11 @@ function HomePage({ lang, content }) {
     }
   }
 
+  const langClass = { ja: 'lang-ja', zh: 'lang-zh', en: 'lang-en' }[lang] || ''
+  const htmlLang = { ja: 'ja', zh: 'zh-CN', en: 'en' }[lang] || 'en'
+
   return (
-    <div className="site cyber-site">
+    <div className={`site cyber-site ${langClass}`.trim()}>
       <SeoMeta
         title={texts.seo.title}
         description={texts.seo.description}
@@ -92,7 +95,7 @@ function HomePage({ lang, content }) {
 
         <div className="hero-overlay">
           <div className="hero-copy">
-            <p className="hero-company-name">{texts.siteName}</p>
+            <p className="hero-company-name" lang={htmlLang}>{texts.siteName}</p>
             <h1 className="hero-main-title">{texts.hero.title}</h1>
             <p className="hero-text">{texts.hero.description}</p>
             <div className="hero-actions">
@@ -124,7 +127,7 @@ function HomePage({ lang, content }) {
         </div>
 
         <div className="hero-bottom-nav">
-          <div className="brand">
+          <div className="brand" lang={htmlLang}>
             <span className="brand-dot" />
             {texts.siteName}
           </div>
@@ -255,7 +258,7 @@ function HomePage({ lang, content }) {
       </section>
 
       <footer className="footer">
-        <p>
+        <p lang={htmlLang}>
           © {new Date().getFullYear()} {texts.siteName} · {texts.footer}
         </p>
       </footer>
