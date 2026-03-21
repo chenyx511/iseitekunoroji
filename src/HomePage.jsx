@@ -37,6 +37,12 @@ function HomePage({ lang, content }) {
       .catch(() => setCaptcha(null))
   }, [lang])
 
+  useEffect(() => {
+    const htmlLang = { ja: 'ja', zh: 'zh-CN', en: 'en' }[lang] || 'en'
+    document.documentElement.lang = htmlLang
+    return () => { document.documentElement.lang = 'en' }
+  }, [lang])
+
   if (!texts) {
     return <div className="empty-state">Loading...</div>
   }
@@ -100,25 +106,19 @@ function HomePage({ lang, content }) {
           </div>
 
           <div className="hero-side-panel">
-            <p>{texts.hero.industriesTitle}</p>
+            <p>{texts.hero.sidePanel?.title}</p>
             <ul>
-              {texts.hero.industries.map((item) => (
+              {(texts.hero.sidePanel?.items || []).map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
             <div className="hero-metrics">
-              <div>
-                <strong>99.95%</strong>
-                <span>Uptime</span>
-              </div>
-              <div>
-                <strong>24/7</strong>
-                <span>Support</span>
-              </div>
-              <div>
-                <strong>3x</strong>
-                <span>Delivery Speed</span>
-              </div>
+              {(texts.hero.sidePanel?.metrics || []).map((m, i) => (
+                <div key={i}>
+                  <strong>{m.value}</strong>
+                  <span>{m.label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

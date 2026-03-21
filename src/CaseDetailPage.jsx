@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import SeoMeta from './SeoMeta'
 
@@ -16,6 +17,12 @@ function casePath(lang, slug) {
 function CaseDetailPage({ lang, content }) {
   const { slug } = useParams()
   const texts = content?.[lang]
+
+  useEffect(() => {
+    const htmlLang = { ja: 'ja', zh: 'zh-CN', en: 'en' }[lang] || 'en'
+    document.documentElement.lang = htmlLang
+    return () => { document.documentElement.lang = 'en' }
+  }, [lang])
 
   if (!texts) {
     return <div className="empty-state">Loading...</div>

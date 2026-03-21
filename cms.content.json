@@ -25,8 +25,15 @@
       "description": "EC、ソフトウェア、オフィスシステム、企業サイトの開発を通じて、業務効率化と売上拡大を実現します。",
       "primaryButton": "無料相談",
       "secondaryButton": "サービスを見る",
-      "industriesTitle": "対応業界",
-      "industries": ["小売・EC", "製造・サプライチェーン", "教育", "公共サービス"]
+      "sidePanel": {
+        "title": "技術強み",
+        "items": ["フルスタック開発", "アジャイル納品", "クラウドネイティブ", "継続的改善"],
+        "metrics": [
+          { "value": "100+", "label": "プロジェクト実績" },
+          { "value": "敏捷", "label": "イテレーション開発" },
+          { "value": "品質", "label": "テスト・レビュー重視" }
+        ]
+      }
     },
     "servicesSection": {
       "title": "主要サービス",
@@ -133,8 +140,15 @@
       "description": "我们专注电商平台、软件开发、办公系统开发和网站开发，帮助企业从业务梳理到系统落地，快速完成数字化升级。",
       "primaryButton": "获取方案",
       "secondaryButton": "查看业务",
-      "industriesTitle": "已服务行业",
-      "industries": ["零售与电商", "制造与供应链", "教育与培训", "政企服务"]
+      "sidePanel": {
+        "title": "技术优势",
+        "items": ["全栈开发", "敏捷交付", "云原生架构", "持续集成"],
+        "metrics": [
+          { "value": "100+", "label": "项目交付" },
+          { "value": "敏捷", "label": "迭代开发" },
+          { "value": "质量", "label": "测试与代码评审" }
+        ]
+      }
     },
     "servicesSection": {
       "title": "核心业务",
@@ -241,8 +255,15 @@
       "description": "We specialize in e-commerce platforms, custom software, office systems, and enterprise websites to accelerate digital transformation.",
       "primaryButton": "Get Proposal",
       "secondaryButton": "View Services",
-      "industriesTitle": "Industries We Serve",
-      "industries": ["Retail & E-commerce", "Manufacturing & Supply Chain", "Education & Training", "Public Services"]
+      "sidePanel": {
+        "title": "Technical Strengths",
+        "items": ["Full-stack Development", "Agile Delivery", "Cloud-Native", "Continuous Improvement"],
+        "metrics": [
+          { "value": "100+", "label": "Projects Delivered" },
+          { "value": "Agile", "label": "Iterative Development" },
+          { "value": "Quality", "label": "Testing & Code Review" }
+        ]
+      }
     },
     "servicesSection": {
       "title": "Core Services",
